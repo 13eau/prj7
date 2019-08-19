@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+    <classPathEntry location="D:\Maven\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar"/>	
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://xawn.f3322.net:3306/prj7" userId="prj7" password="#@$*()#$" />
+    <javaModelGenerator targetPackage="com.woniuxy.entity" targetProject="prj7" ></javaModelGenerator>
+    <sqlMapGenerator targetPackage="com.woniuxy.mapper" targetProject="prj7" ></sqlMapGenerator>
+    <javaClientGenerator targetPackage="com.woniuxy.mapper" targetProject="prj7" type="XMLMAPPER" />
+    <table schema="" tableName="assemble" ></table>
+	<table schema="" tableName="assemble_stock" ></table>
+ 	<table schema="" tableName="constructionman" ></table>
+	<table schema="" tableName="craneman" ></table>
+	<table schema="" tableName="embedment" ></table>
+	<table schema="" tableName="embedment_stock" ></table>
+	<table schema="" tableName="foreman" ></table>
+	<table schema="" tableName="general" ></table>
+	<table schema="" tableName="painting" ></table>
+	<table schema="" tableName="painting_stock" ></table>
+	<table schema="" tableName="party" ></table>
+	<table schema="" tableName="pit" ></table>
+	<table schema="" tableName="pit_stock" ></table>
+	<table schema="" tableName="process" ></table>
+	<table schema="" tableName="projectman" ></table>
+	<table schema="" tableName="role" ></table>
+	<table schema="" tableName="roletree" ></table>
+	<table schema="" tableName="security" ></table>
+	<table schema="" tableName="security_stock" ></table>
+	<table schema="" tableName="splicing" ></table>
+	<table schema="" tableName="splicing_stock" ></table>
+	<table schema="" tableName="stock" ></table>
+	<table schema="" tableName="tempman" ></table>
+	<table schema="" tableName="trailerman" ></table>
+	<table schema="" tableName="tree" ></table>
+	<table schema="" tableName="userinfo" ></table>
+	<table schema="" tableName="userinforole" ></table>
+	<table schema="" tableName="weather" ></table>
+	<table schema="" tableName="welding" ></table>
+	<table schema="" tableName="welding_stock" ></table>
+	
+  </context>
+</generatorConfiguration>
