@@ -16,11 +16,8 @@ import com.woniuxy.mapper.AssembleMapper;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class Prj7ApplicationTests {
-	@Resource
-	private AssembleMapper assemblemapper;
 	@Test
 	public void contextLoads() {
-		System.out.println(assemblemapper);
 		
 	}
 
