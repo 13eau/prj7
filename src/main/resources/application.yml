@@ -1,5 +1,6 @@
 server:
   port: 8090
+  
 spring:  mustache:    prefix: /
     suffix: .jsp
 
@@ -7,7 +8,7 @@ spring:  mustache:    prefix: /
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://xawn.f3322.net:3306/prj7?characterEncoding=UTF-8
     username: prj7
-    password: #@$*()#$
+    password: '#@$*()#$'
     
 logging:
   level:
