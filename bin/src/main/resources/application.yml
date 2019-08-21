@@ -1,18 +1,0 @@
-server:
-  address: 8090
-spring:  mustache:    prefix: /
-    suffix: .jsp
-
-  datasource: 
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://xawn.f3322.net:3306/prj7?characterEncoding=UTF-8
-    username: prj7
-    password: #@$*()#$
-    
-logging:
-  level:
-    com: 
-     woniuxy:
-         mapper: DEBUG
-        
-        
