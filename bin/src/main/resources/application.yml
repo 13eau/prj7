@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  address: 8090
 spring:  mustache:    prefix: /
     suffix: .jsp
 
