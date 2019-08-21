@@ -8,7 +8,7 @@
 		<version>2.1.7.RELEASE</version>
 		<relativePath/> 
 	</parent>
-	<groupId>com.woniu</groupId>
+	<groupId>com.woniuxy</groupId>
 	<artifactId>prj7</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
