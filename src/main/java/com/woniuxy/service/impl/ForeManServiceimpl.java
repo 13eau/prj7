@@ -5,6 +5,8 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import com.woniuxy.entity.Foreman;
+import com.woniuxy.entity.ForemanExample;
+import com.woniuxy.entity.ForemanExample.Criteria;
 import com.woniuxy.mapper.ForemanMapper;
 import com.woniuxy.service.IforeManService;
 
@@ -44,13 +46,19 @@ public class ForeManServiceimpl implements IforeManService {
 	@Override
 	public List<Foreman> findByStatus(String status) {
 		// TODO Auto-generated method stub
-		return null;
+		ForemanExample example = new ForemanExample();
+		example.createCriteria().andStatusEqualTo(status);
+		List<Foreman> list = foremanMapper.selectByExample(example);
+		return list;
 	}
 
 	@Override
 	public List<Foreman> findByCompany(Integer company) {
 		// TODO Auto-generated method stub
-		return null;
+		ForemanExample example = new ForemanExample();
+		example.createCriteria().andCompanyEqualTo(company);
+		List<Foreman> list = foremanMapper.selectByExample(example);
+		return list;
 	}
 
 }

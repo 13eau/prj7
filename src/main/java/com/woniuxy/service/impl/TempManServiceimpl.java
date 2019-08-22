@@ -5,7 +5,10 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.woniuxy.entity.Constructionman;
+import com.woniuxy.entity.ConstructionmanExample;
 import com.woniuxy.entity.Tempman;
+import com.woniuxy.entity.TempmanExample;
 import com.woniuxy.mapper.TempmanMapper;
 import com.woniuxy.service.ItempManService;
 
@@ -45,7 +48,10 @@ public class TempManServiceimpl implements ItempManService{
 	@Override
 	public List<Tempman> findByStatus(String status) {
 		// TODO Auto-generated method stub
-		return null;
+		TempmanExample example = new TempmanExample();
+		example.createCriteria().andStatusEqualTo(status);
+		List<Tempman> list = tempmanmapper.selectByExample(example);
+		return list;
 	}
 
 	@Override
@@ -57,7 +63,10 @@ public class TempManServiceimpl implements ItempManService{
 	@Override
 	public List<Tempman> findByCompany(Integer company) {
 		// TODO Auto-generated method stub
-		return null;
+		TempmanExample example = new TempmanExample();
+		example.createCriteria().andCompanyEqualTo(company);
+		List<Tempman> list = tempmanmapper.selectByExample(example);
+		return list;
 	}
 
 }

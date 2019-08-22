@@ -5,6 +5,7 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import com.woniuxy.entity.Constructionman;
+import com.woniuxy.entity.ConstructionmanExample;
 import com.woniuxy.mapper.ConstructionmanMapper;
 import com.woniuxy.service.IconstructionManService;
 
@@ -44,7 +45,10 @@ public class ConstructionManServiceimpl  implements IconstructionManService{
 	@Override
 	public List<Constructionman> findByStatus(String status) {
 		// TODO Auto-generated method stub
-		return null;
+		ConstructionmanExample example = new ConstructionmanExample();
+		example.createCriteria().andStatusEqualTo(status);
+		List<Constructionman> list = constructionmapper.selectByExample(example);
+		return list;
 	}
 
 	@Override
@@ -56,7 +60,10 @@ public class ConstructionManServiceimpl  implements IconstructionManService{
 	@Override
 	public List<Constructionman> findByCompany(Integer company) {
 		// TODO Auto-generated method stub
-		return null;
+		ConstructionmanExample example = new ConstructionmanExample();
+		example.createCriteria().andCompanyEqualTo(company);
+		List<Constructionman> list = constructionmapper.selectByExample(example);
+		return list;
 	}
 
 }
