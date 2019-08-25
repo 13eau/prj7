@@ -30,6 +30,7 @@ public class ProjectmanServiceImpl implements IProjectmanService {
 	@Override
 	public void update(Projectman projectman) {
 		projectmanMapper.updateByPrimaryKeySelective(projectman);
+		
 	}
 
 	@Override

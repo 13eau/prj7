@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,10 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form method="post" action="findAll">
-		uname<INPUT TYPE="text" NAME="uname" value="${log.uname }">action<INPUT
-			TYPE="text" value="${log.action }" NAME="action"><input
-			type="submit" value="Query">
 		<TABLE border="1" width="100%">
 			<TR>
 				<TD>id</TD>
@@ -24,6 +19,8 @@
 				<TD>address</TD>
 				<TD>status</TD>
 				<TD>company</TD>
+				<TD>delete</TD>
+				<TD>update</TD>
 			</TR>
 			<c:forEach items="${list}" var="projectMan">
 				<TR>
@@ -36,9 +33,11 @@
 					<TD>${projectMan.pmAddress}</TD>
 					<TD>${projectMan.status}</TD>
 					<TD>${projectMan.company}</TD>
+					<TD><a href="delete?pmId=${projectMan.pmId}">删除</a></TD>
+					<TD><a href="findById?pmId=${projectMan.pmId}">修改</a></TD>
+					
 				</TR>
 			</c:forEach>
 		</TABLE>
-	</form>
 </body>
 </html>

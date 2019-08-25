@@ -2,9 +2,10 @@ server:
   port: 8090
   
 spring:
-  mustache:
-    prefix: /
-    suffix: .jsp
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
 
   datasource: 
     driver-class-name: com.mysql.jdbc.Driver

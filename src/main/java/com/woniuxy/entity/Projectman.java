@@ -290,4 +290,12 @@ public class Projectman {
     public void setCompany(Integer company) {
         this.company = company;
     }
+
+	@Override
+	public String toString() {
+		return "Projectman [pmId=" + pmId + ", pmName=" + pmName + ", pmSex=" + pmSex + ", pmAge=" + pmAge
+				+ ", pmPhone=" + pmPhone + ", pmSal=" + pmSal + ", pmAddress=" + pmAddress + ", status=" + status
+				+ ", company=" + company + "]";
+	}
+    
 }
