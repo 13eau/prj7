@@ -9,12 +9,12 @@
 </head>
 <body>
 	<form action="save" method="post">
-		id: <input type="text" name="pmId" /> <br /> name: <input
-			type="text" name="pmName" /> <br /> sex: <input type="text"
-			name="pmSex" /> <br /> age: <input type="text" name="pmAge" /> <br />
-		phone: <input type="text" name="pmPhone" /> <br /> sal: <input
-			type="text" name="pmSal" /> <br /> address: <input type="text"
-			name="pmAddress" /> <br /> status: <input type="text" name="status" />
+		id: <input type="text" name="tmId" /> <br /> name: <input
+			type="text" name="tmName" /> <br /> sex: <input type="text"
+			name="tmSex" /> <br /> age: <input type="text" name="tmAge" /> <br />
+		phone: <input type="text" name="tmPhone" /> <br /> sal: <input
+			type="text" name="tmSal" /> <br /> address: <input type="text"
+			name="tmAddress" /> <br /> status: <input type="text" name="status" />
 		<br /> company: <input type="text" name="company" /> <br /> <input
 			type="submit" value="添加" />
 	</form>

@@ -22,19 +22,19 @@
 				<TD>delete</TD>
 				<TD>update</TD>
 			</TR>
-			<c:forEach items="${list}" var="projectMan">
+			<c:forEach items="${list}" var="trailerMan">
 				<TR>
-					<TD>${projectMan.pmId}</TD>
-					<TD>${projectMan.pmName}</TD>
-					<TD>${projectMan.pmSex}</TD>
-					<TD>${projectMan.pmAge}</TD>
-					<TD>${projectMan.pmPhone}</TD>
-					<TD>${projectMan.pmSal}</TD>
-					<TD>${projectMan.pmAddress}</TD>
-					<TD>${projectMan.status}</TD>
-					<TD>${projectMan.company}</TD>
-					<TD><a href="delete?pmId=${projectMan.pmId}">删除</a></TD>
-					<TD><a href="findById?pmId=${projectMan.pmId}">修改</a></TD>
+					<TD>${trailerMan.tmId}</TD>
+					<TD>${trailerMan.tmName}</TD>
+					<TD>${trailerMan.tmSex}</TD>
+					<TD>${trailerMan.tmAge}</TD>
+					<TD>${trailerMan.tmPhone}</TD>
+					<TD>${trailerMan.tmSal}</TD>
+					<TD>${trailerMan.tmAddress}</TD>
+					<TD>${trailerMan.status}</TD>
+					<TD>${trailerMan.company}</TD>
+					<TD><a href="delete?tmId=${trailerMan.tmId}">删除</a></TD>
+					<TD><a href="findById?tmId=${trailerMan.tmId}">修改</a></TD>
 					
 				</TR>
 			</c:forEach>
